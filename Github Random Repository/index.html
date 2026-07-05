@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repository Finder</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+    
+    <main class="container">
+      <header class="header">
+        <div class="logo">
+          <i class="fa-brands fa-github"></i>
+        </div>
+
+        <h1>GitHub Repository Finder</h1>
+      </header>
+
+      <div class="language-box">
+        <select id="language">
+          <option value="" selected disabled>Select a Language</option>
+
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="C++">C++</option>
+          <option value="PHP">PHP</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="Go">Go</option>
+          <option value="Rust">Rust</option>
+        </select>
+      </div>
+      <div class="repo-card hidden">
+        <h2 class="repo-name"></h2>
+
+        <p class="repo-description"></p>
+
+        <div class="repo-info">
+          <span class="repo-language"></span>
+
+          <span class="repo-stars"></span>
+
+          <span class="repo-forks"></span>
+
+          <span class="repo-issues"></span>
+        </div>
+
+        <a href="#" class="repo-link" target="_blank"> Visit Repository </a>
+      </div>
+
+      <button class="refresh-btn hidden">Refresh</button>
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
